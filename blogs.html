@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RJ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large"
+          ><i class="fas fa-rupee-sign">onBlogs</i></a
+        >
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Editorial Board</a
+        >
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Issues</a
+        >
+        <a
+          href="event.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          ><i class="fas fa-calendar-alt"></i> Events</a
+        >
+        <a
+          href="fund.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          ><i class="fas fa-hand-holding-usd"></i> Fund Raising</a
+        >
+
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            <i class="fab fa-blogger-b"></i><a href="blogs.html"> Blogs </a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-suitcase"></i> Travel</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-atlas"></i> Biography</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-signal"></i> Motivation</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-utensils"></i> Food & Drinks</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-trophy"></i> Sport</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-laptop-code"></i> Tech & Gadget</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-tshirt"></i> Fashion</a
+            >
+            <a href="post.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-users"></i> Family Activities</a
+            >
+          </div>
+        </div>
+        <a
+          href="about.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          ><i class="fas fa-users"></i> About Us</a
+        >
+        <a
+          href="contact.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          ><i class="fas fa-headset"></i> Contact Us</a
+        >
+        <a
+          href="javascript:void(0)"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div
+      id="navDemo"
+      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+      style="margin-top:46px"
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        ><i class="fas fa-home"></i> Home</a
+      >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >Editorial Board</a
+      >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >Issues</a
+      >
+      <a
+        href="fund.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        ><i class="fas fa-hand-holding-usd"></i> Fund Raising</a
+      >
+      <a
+        href="event.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        ><i class="fas fa-calendar-alt"></i> Events</a
+      >
+      <a
+        href="blogs.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        ><i class="fab fa-blogger-b"></i> Blogs</a
+      >
+      <a
+        href="about.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        ><i class="fas fa-users"></i> About Us</a
+      >
+      <a
+        href="contact.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        ><i class="fas fa-headset"></i> Contact Us</a
+      >
+    </div>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding" style="margin-top:4%">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img
+          src="pic/mountains.jpg"
+          alt="Norway"
+          style="width:100%"
+          class="w3-hover-opacity"
+        />
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img
+          src="pic/lights.jpg"
+          alt="Norway"
+          style="width:100%"
+          class="w3-hover-opacity"
+        />
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img
+          src="pic/nature.jpg"
+          alt="Norway"
+          style="width:100%"
+          class="w3-hover-opacity"
+        />
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img
+          src="pic/p1.jpg"
+          alt="Norway"
+          style="width:100%"
+          class="w3-hover-opacity"
+        />
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img
+          src="pic/p2.jpg"
+          alt="Norway"
+          style="width:100%"
+          class="w3-hover-opacity"
+        />
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img
+          src="pic/p3.jpg"
+          alt="Norway"
+          style="width:100%"
+          class="w3-hover-opacity"
+        />
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"
+    >
+      <i class="fab fa-facebook w3-hover-opacity"></i>
+      <i class="fab fa-instagram w3-hover-opacity"></i>
+      <i class="fab fa-snapchat w3-hover-opacity"></i>
+      <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fab fa-twitter w3-hover-opacity"></i>
+      <i class="fab fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >RJPTechSolutions</a
+        >
+      </p>
+    </footer>
+  </body>
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</html>
